@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Authentication</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+  </head>
+
+  <body>
+  <% if session[:user] %>
+    <ul class="nav justify-content-center">
+        <% if session[:user] %>
+          <li class="nav-item">
+            <%= link_to "Active", root_path ,class:"nav-link active" %>
+          </li>
+        <% end %>
+        <% unless session[:user] %>
+          <li class="nav-item">
+            <%= link_to "Login", login_path ,class:"nav-link" %>
+          </li>
+          <li class="nav-item">
+            <%= link_to "Register", registration_path,class:"nav-link" %>
+          </li>
+        <% end %> 
+        <% if session[:user] %>
+          <li class="nav-item">
+          <%= button_to "Logout",logout_path, method: :post,class:"nav-link" %>
+          </li>
+        <% end %>
+    </ul>
+<% end %> 
+    <%= yield %>
+  </body>
+</html>
