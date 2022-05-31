@@ -1,7 +1,7 @@
 <h1 align="center"> Rails Authentication App </h1>
 
 <p align="center">
-<img src="https://user-images.githubusercontent.com/93389016/171129503-c70d1879-9740-4ac3-85f9-a7f0369bd467.png">  
+<img src="https://user-images.githubusercontent.com/93389016/171141722-2858b7ab-086b-4c93-ba02-589ea5d73697.png">  
 </p>
 
 ## To run this project :   
@@ -12,7 +12,7 @@
 
 `Step 2` :  Download the source code .
 ```
-git https://github.com/MohamedAlabasy/Rails-Authentication-ITI.git
+git  
 ```
 
 `Step 3` :  Enter the project file then ...
