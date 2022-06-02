@@ -12,7 +12,7 @@
 
 `Step 2` :  Download the source code .
 ```
-git  
+git https://github.com/MohamedAlabasy/Rails-Blog.git
 ```
 
 `Step 3` :  Enter the project file then ...
